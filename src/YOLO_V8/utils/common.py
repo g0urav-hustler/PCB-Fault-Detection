@@ -1,4 +1,4 @@
-from YOLO_V8 import logger
+from src.YOLO_V8 import logger
 from pathlib import Path
 from box import ConfigBox
 from box.exceptions import BoxValueError

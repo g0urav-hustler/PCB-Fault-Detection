@@ -2,7 +2,7 @@ from src.YOLO_V8.config.configurations import ConfigurationManager
 from src.YOLO_V8.components.data_ingestion import DataIngestion
 from src.YOLO_V8 import logger
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Ingestion Stage"
 
 class DataIngestionTrainingPipeline:
     def __init__(self):

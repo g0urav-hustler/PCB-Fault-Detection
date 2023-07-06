@@ -46,6 +46,19 @@ def create_directories(path_to_directories: list, verbose=True):
             logger.info(f"created directory at: {path}")
 
 @ensure_annotations
+def join_path(current_path: Path, add_folder: str):
+    """Add folder to exist path 
+    Args: 
+        current_path (Path): the current path
+        add_folder (str): folder which has to added 
+    Returns:
+        ResultPath: path with added folder
+    """
+    ResultPath = Path.joinpath(current_path, add_folder)
+
+    return ResultPath
+
+@ensure_annotations
 def save_json(path: Path, data: dict):
     """save json data
     Args:

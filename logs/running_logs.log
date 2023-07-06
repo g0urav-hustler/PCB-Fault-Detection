@@ -97,19 +97,3 @@ Source-Age: 1
 [2023-07-01 20:50:45,197: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
 
 x==========x]
-
-[2023-07-06 16:57:10,613: INFO: common: yaml file: config/config.yaml loaded successfully]
-[2023-07-06 16:57:10,614: INFO: common: yaml file: params.yaml loaded successfully]
-[2023-07-06 16:57:10,615: INFO: common: created directory at: src/YOLO_V8/data/raw]
-[2023-07-06 16:57:38,010: INFO: common: yaml file: config/config.yaml loaded successfully]
-[2023-07-06 16:57:38,011: INFO: common: yaml file: params.yaml loaded successfully]
-[2023-07-06 16:57:38,011: INFO: common: created directory at: src/YOLO_V8/data/raw]
-[2023-07-06 17:21:33,661: INFO: common: yaml file: config/config.yaml loaded successfully]
-[2023-07-06 17:21:33,662: INFO: common: yaml file: params.yaml loaded successfully]
-[2023-07-06 17:21:33,663: INFO: common: created directory at: src/YOLO_V8/data/raw]
-[2023-07-06 17:23:20,532: INFO: common: yaml file: config/config.yaml loaded successfully]
-[2023-07-06 17:23:20,534: INFO: common: yaml file: params.yaml loaded successfully]
-[2023-07-06 17:23:20,534: INFO: common: created directory at: src/YOLO_V8/data/raw]
-[2023-07-06 17:25:35,248: INFO: common: yaml file: config/config.yaml loaded successfully]
-[2023-07-06 17:25:35,249: INFO: common: yaml file: params.yaml loaded successfully]
-[2023-07-06 17:25:35,250: INFO: common: created directory at: src/YOLO_V8/data/raw]

@@ -41,12 +41,12 @@ def create_directories(path_to_directories: list, verbose=True):
         ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
     """
     for path in path_to_directories:
-        os.makedirs(path, exist_ok=True)
-        if verbose:
+        if not os.path.isdir(path):
+            os.makedirs(path, exist_ok=True)
             logger.info(f"created directory at: {path}")
 
 @ensure_annotations
-def join_path(current_path: Path, add_folder: str):
+def join_path(current_path: str, add_folder: str) :
     """Add folder to exist path 
     Args: 
         current_path (Path): the current path
@@ -54,7 +54,7 @@ def join_path(current_path: Path, add_folder: str):
     Returns:
         ResultPath: path with added folder
     """
-    ResultPath = Path.joinpath(current_path, add_folder)
+    ResultPath = os.path.join(current_path, add_folder)
 
     return ResultPath
 

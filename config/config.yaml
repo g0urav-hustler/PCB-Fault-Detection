@@ -7,3 +7,9 @@ data_ingestion:
   source_URL: https://github.com/g0urav-hustler/External-Data/raw/main/PCBData.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_processing:
+  source_dir: artifacts/data_ingestion/PCBData
+  raw_data_dir: src/YOLO_V8/data/raw
+  processed_data_dir: src/YOLO_V8/data/processed
+  split_data_dir: src/YOLO_V8/data/processed

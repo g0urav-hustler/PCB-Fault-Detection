@@ -34,6 +34,8 @@ class ConfigurationManager:
         config = self.config.data_processing
         params = self.params
 
+        create_directories([config.raw_data_dir, config.processed_data_dir, config.split_data_dir])
+
         data_processing_config = DataProcessingConfig(
             source_dir= config.source_dir,
             raw_data_dir= config.raw_data_dir,

@@ -10,6 +10,6 @@ data_ingestion:
 
 data_processing:
   source_dir: artifacts/data_ingestion/PCBData
-  raw_data_dir: src/YOLO_V8/data/raw
-  processed_data_dir: src/YOLO_V8/data/processed
-  split_data_dir: src/YOLO_V8/data/split
+  raw_data_dir: src/YOLO_V8/data/raw_data
+  processed_data_dir: src/YOLO_V8/data/processed_data
+  split_data_dir: src/YOLO_V8/data/split_data

@@ -61,7 +61,7 @@ def join_path(current_path: str, add_folder: str) :
     return ResultPath
 
 @ensure_annotations
-def copy_files( files_names : list, source_dir :str, target_dir: str, file_extension: str):
+def copy_files( files_names : list, source_dir :str, target_dir: str, file_extension):
     """Copy files form source dir to target dir
     Args:
         file_names (list): list of files
@@ -82,10 +82,10 @@ def copy_files( files_names : list, source_dir :str, target_dir: str, file_exten
             shutil.copy(file_source_path, file_target_path)
             file_count = file_count + 1
         
-        if file_count:
-            logger.info(f"{file_count} Files copied from {source_dir} to {target_dir}.")
-        else:
-            logger.inf(f"All files are already in {target_dir}.")
+    if file_count:
+        logger.info(f"{file_count} Files copied from {source_dir} to {target_dir}.")
+    else:
+        logger.info(f"All files are already in {target_dir}.")
 
 @ensure_annotations
 def save_json(path: Path, data: dict):

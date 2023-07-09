@@ -1,6 +1,6 @@
 from src.YOLO_V8.constants import *
 from src.YOLO_V8.utils.common import read_yaml, create_directories
-from src.YOLO_V8.entity.config_entity import DataIngestionConfig
+from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig
 
 # creating configuration class 
 class ConfigurationManager:
@@ -29,3 +29,19 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_data_process_config(self) -> DataProcessingConfig:
+        config = self.config.data_processing
+        params = self.params
+
+        data_processing_config = DataProcessingConfig(
+            source_dir= config.source_dir,
+            raw_data_dir= config.raw_data_dir,
+            processed_data_dir= config.processed_data_dir,
+            split_data_dir = config.split_data_dir,
+            image_size= params.image_size,
+            train_data_size= params.train_data_size,
+            val_data_size= params.val_data_size
+        )
+
+        return data_processing_config

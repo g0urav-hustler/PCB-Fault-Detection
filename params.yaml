@@ -1,3 +1,8 @@
-image_size : 640,640
-train_data_size: 0.8
-val_data_size: 0.2
+IMAZE_SIZE : [640,640]
+TRAIN_DATA_SIZE: 0.8
+VAL_DATA_SIZE: 0.2
+
+BASE_MODEL:
+  MODEL_NAME: 
+
+

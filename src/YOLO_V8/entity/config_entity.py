@@ -20,3 +20,8 @@ class DataProcessingConfig:
     image_size: list
     train_data_size: float
     val_data_size: float
+
+@dataclass(frozen=True)
+class BaseModelConfig:
+    base_model_dir: Path
+    base_model_name :str

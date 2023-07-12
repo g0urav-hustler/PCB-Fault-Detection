@@ -1,6 +1,6 @@
 from src.YOLO_V8.constants import *
 from src.YOLO_V8.utils.common import read_yaml, create_directories
-from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig
+from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig, BaseModelConfig
 
 # creating configuration class 
 class ConfigurationManager:
@@ -47,3 +47,16 @@ class ConfigurationManager:
         )
 
         return data_processing_config
+    
+    def get_base_model_config(self) -> BaseModelConfig:
+        config = self.config.base_model
+        params = self.params.BASE_MODEL
+    
+        create_directories([config.base_model_dir])
+
+        base_model_config = BaseModelConfig(
+            base_model_dir = Path(config.base_model_dir),
+            base_model_name = params.MODEL_NAME
+        )
+
+        return base_model_config

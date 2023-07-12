@@ -315,3 +315,12 @@ x==========x]
 [2023-07-10 13:11:58,936: INFO: main: >>>>>> stage Data Processing Stage completed <<<<<<
 
 x==========x]
+[2023-07-12 13:54:27,361: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-07-12 13:54:27,365: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 13:54:27,374: INFO: common: created directory at: artifacts/base_models]
+[2023-07-12 13:54:34,349: INFO: 418022278: yolov8n.pt download sucessfully at: artifacts/base_models/yolov8n.pt .]
+[2023-07-12 13:54:47,069: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-07-12 13:55:16,247: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-07-12 13:55:16,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 13:55:16,253: INFO: common: already created directory: artifacts/base_models]
+[2023-07-12 13:55:16,255: INFO: 418022278: yolov8n.pt model already exists at artifacts/base_models/yolov8n.pt . ]

@@ -15,4 +15,4 @@ data_processing:
   split_data_dir: artifacts/data_processing/split_data
 
 base_model:
-  base_model_dir = artifacts/base_models
+  base_model_dir: artifacts/base_models

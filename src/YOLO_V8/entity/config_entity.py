@@ -16,7 +16,6 @@ class DataProcessingConfig:
     raw_data_dir: Path
     processed_data_dir: Path
     split_data_dir: Path
-
     image_size: list
     train_data_size: float
     val_data_size: float

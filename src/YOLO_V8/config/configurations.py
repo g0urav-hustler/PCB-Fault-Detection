@@ -41,9 +41,9 @@ class ConfigurationManager:
             raw_data_dir= config.raw_data_dir,
             processed_data_dir= config.processed_data_dir,
             split_data_dir = config.split_data_dir,
-            image_size= params.image_size,
-            train_data_size= params.train_data_size,
-            val_data_size= params.val_data_size
+            image_size= params.IMAGE_SIZE,
+            train_data_size= params.TRAIN_DATA_SIZE,
+            val_data_size= params.VAL_DATA_SIZE
         )
 
         return data_processing_config

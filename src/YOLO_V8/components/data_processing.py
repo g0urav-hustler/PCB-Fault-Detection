@@ -11,8 +11,8 @@ from src.YOLO_V8.utils.common import create_directories, copy_files, join_path
 class DataProcessing:
     def __init__(self, config: DataProcessingConfig):
         self.config = config
-        self.image_width = int(self.config.image_size.split(",")[0])
-        self.image_height = int(self.config.image_size.split(",")[1])
+        self.image_width = self.config.image_size[0]
+        self.image_height = self.config.image_size[1]
         self.train_data_size = self.config.train_data_size
         self.val_data_size = self.config.val_data_size
     

@@ -3,6 +3,6 @@ TRAIN_DATA_SIZE: 0.8
 VAL_DATA_SIZE: 0.2
 
 BASE_MODEL:
-  MODEL_NAME: yolov8n.pt
+  MODEL_NAME: yolov8l.pt
 
 

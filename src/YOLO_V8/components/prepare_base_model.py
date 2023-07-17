@@ -2,7 +2,6 @@ import os
 import shutil
 from ultralytics import YOLO
 from src.YOLO_V8 import logger
-from src.YOLO_V8.utils.common import get_size
 from src.YOLO_V8.entity.config_entity import BaseModelConfig
 
 

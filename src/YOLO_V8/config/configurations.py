@@ -69,6 +69,8 @@ class ConfigurationManager:
       config = self.config.train_model
       params = self.params.TRAIN_MODEL_PARAMS
 
+      create_directories([config.savel_model_dir])
+
       model_training_config = TrainModelConfig(
           base_model = Path(base_model_path),
           data_file = config.data_file_path,

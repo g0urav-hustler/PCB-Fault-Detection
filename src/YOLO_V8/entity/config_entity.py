@@ -34,3 +34,11 @@ class TrainModelConfig:
   batch_size: int
   image_size: int
   optimizer: str
+
+@dataclass(frozen = True)
+class ModelEvaluateConfig:
+  best_model: Path
+  data_file: Path
+  batch_size: int
+  image_size: int
+  confidence: float

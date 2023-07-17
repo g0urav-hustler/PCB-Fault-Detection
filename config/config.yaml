@@ -20,3 +20,7 @@ base_model:
 train_model:
   data_file_path: src/YOLO_V8/data_file/data.yaml
   saved_model_dir: artifacts/train_models
+
+model_evaluation:
+  best_model: artifacts/train_models/train/weights/best.pt
+  data_file_path: src/YOLO_V8/data_file/data.yaml

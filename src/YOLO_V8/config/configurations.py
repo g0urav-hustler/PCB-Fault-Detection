@@ -96,3 +96,5 @@ class ConfigurationManager:
           image_size = params.IMAGE_SIZE,
           confidence = params.CONFIDENCE
       )
+
+      return model_evaluate_config

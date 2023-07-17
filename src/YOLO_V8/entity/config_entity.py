@@ -24,3 +24,13 @@ class DataProcessingConfig:
 class BaseModelConfig:
     base_model_dir: Path
     base_model_name :str
+
+@dataclass(frozen = True)
+class TrainModelConfig:
+  base_model: Path
+  data_file: Path
+  saved_model_dir: Path
+  epochs: int
+  batch_size: int
+  image_size: int
+  optimizer: str

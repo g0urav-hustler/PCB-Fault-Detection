@@ -1,7 +1,11 @@
 import os
 from src.YOLO_V8.constants import *
 from src.YOLO_V8.utils.common import read_yaml, create_directories
-from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig, BaseModelConfig, TrainModelConfig
+from src.YOLO_V8.entity.config_entity import ( DataIngestionConfig,
+                                               DataProcessingConfig, 
+                                               BaseModelConfig, 
+                                               TrainModelConfig, 
+                                               ModelEvaluateConfig )
 
 # creating configuration class 
 class ConfigurationManager:
@@ -81,3 +85,14 @@ class ConfigurationManager:
           optimizer = params.OPTIMIZER )
 
       return model_training_config
+    
+    def get_model_evaluate_config(self) -> ModelEvaluateConfig:
+      config = self.config.model_evaluation
+      params = self.params.MODEL_EVALUATE_PARAMS
+      model_evaluate_config = ModelEvaluateConfig(
+          best_model = config.best_model,
+          data_file = config.data_file_path,
+          batch_size= params.BATCH_SIZE,
+          image_size = params.IMAGE_SIZE,
+          confidence = params.CONFIDENCE
+      )

@@ -16,3 +16,7 @@ data_processing:
 
 base_model:
   base_model_dir: artifacts/base_models
+
+train_model:
+  data_file_path: src/YOLO_V8/data_file/data.yaml
+  saved_model_dir: artifacts/train_models

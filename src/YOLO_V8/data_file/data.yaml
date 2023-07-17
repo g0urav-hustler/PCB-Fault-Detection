@@ -1,0 +1,6 @@
+train: 'artifacts/data_processing/split_data/train_data/images'
+val: 'artifacts/data_processing/split_data/val_data/images'
+
+nc: 7
+names: ['background', 'open', 'short', 'mousebit', 'spur', 'copper', 'pin-hole']
+

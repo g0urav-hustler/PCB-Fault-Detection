@@ -1,6 +1,7 @@
+import os
 from src.YOLO_V8.constants import *
 from src.YOLO_V8.utils.common import read_yaml, create_directories
-from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig, BaseModelConfig
+from src.YOLO_V8.entity.config_entity import DataIngestionConfig, DataProcessingConfig, BaseModelConfig, TrainModelConfig
 
 # creating configuration class 
 class ConfigurationManager:
@@ -60,3 +61,21 @@ class ConfigurationManager:
         )
 
         return base_model_config
+    
+    def get_train_model_config(self) -> TrainModelConfig:
+
+      base_model_path = os.path.join(self.config.base_model.base_model_dir,
+                                     self.params.BASE_MODEL.MODEL_NAME)
+      config = self.config.train_model
+      params = self.params.TRAIN_MODEL_PARAMS
+
+      model_training_config = TrainModelConfig(
+          base_model = Path(base_model_path),
+          data_file = config.data_file_path,
+          saved_model_dir = config.saved_model_dir,
+          epochs = params.EPOCHS,
+          batch_size= params.BATCH_SIZE,
+          image_size = params.IMAGE_SIZE,
+          optimizer = params.OPTIMIZER )
+
+      return model_training_config

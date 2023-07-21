@@ -23,26 +23,33 @@ image_shape = [640,640]
 image = st.file_uploader(label = "Upload your image here", type=['png','jpg','jpeg'])
 
 if image is not None:
-
-    img = Image.open(image) 
+    img = Image.open(image)
+    
     with st.spinner("Detecting the faults"):
-        # img = img.resize(image_shape)
+        img = img.resize(image_shape)
         result = model.predict(img, conf = 0.5, show_conf = False )
         plot_img = result[0].plot()
         result_img = Image.fromarray(plot_img)
+
+    boxes = result[0].boxes.shape[0]
     
-    col1, col2 = st.columns(2)
+    if boxes:
+        col1, col2 = st.columns(2)
 
-    with col1:
-        st.header("Original Image")
+        with col1:
+            st.subheader("Original Image")
+            st.image(img)
+
+        with col2:
+            st.subheader("Detected Faults")
+            st.image(result_img)
+    else:
         st.image(img)
-
-    with col2:
-        st.header("Detected Fault Image")
-        st.image(result_img)
+        st.subheader("The PCB has no fault in it.")
 else:
     st.write("Upload an Image first")
 
+st.divider() 
 
 st.caption("Made by Gourav Chouhan ")
 

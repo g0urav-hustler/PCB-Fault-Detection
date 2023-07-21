@@ -1,5 +1,7 @@
 # PCB Fault Detection
 
+**Website Link** - https://pcb-fault-detection.onrender.com
+
 ## Introduction
 Printed circuit boards (PCBs) are the primary component of any electronic design. Because of this surge in the demand for PCBs in the market, manufacturers are required to produce PCBs in large quantities. Therefore, maintaining the quality of such large numbers of PCBs is challenging. The main objective is to develop a PCB defect detection model that reduces the false detection rate and increases the production rate.To tackle this, in this project we are going to identify defects in a PCB using YOLO. You only look once (YOLO) is a state-of-the-art, real-time object detection system that uses algorithm which applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region.
 Phases of the Project:
@@ -13,8 +15,7 @@ Phases of the Project:
 4. Training Model
 5. Evaluation
 6. WebApp
-7. Testing
-8. Deploying
+7. Deploying
 
 Let us go through them one-by-one
 ## 1. Data Ingestion
@@ -88,3 +89,6 @@ The desired folder structure which is an entire repository of all the training i
       ├─train_data
       └─val_data
 ```
+
+## Base model 
+For the base model we YOLO V8 Large model.

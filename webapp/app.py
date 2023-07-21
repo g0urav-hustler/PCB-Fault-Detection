@@ -2,7 +2,7 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 
-model_path = "/home/gourav/ML/PCB Fault Detection/webapp/model/best.pt"
+model_path = "model/best.pt"
 st.set_page_config(page_title="PCB Fault Detection ", layout="wide",)
 
 #title

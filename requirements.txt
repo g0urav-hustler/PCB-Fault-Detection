@@ -1,1 +1,9 @@
 python-box
+pybboxes
+PyYAML
+ensure
+joblib
+ipykernel
+streamlit
+tensorboard
+ultralytics

@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from PIL import Image
 
 model_path = "/home/gourav/ML/PCB Fault Detection/webapp/model/best.pt"
-
+st.set_page_config(page_title="PCB Fault Detection ", page_icon=":shark:", layout="wide",)
 
 #title
 st.title("PCB Fault Detection")
@@ -25,13 +25,20 @@ image = st.file_uploader(label = "Upload your image here", type=['png','jpg','jp
 if image is not None:
 
     img = Image.open(image) 
-    st.image(img)
-    
-    with st.spinner("Classifing the points.."):
+    with st.spinner("Detecting the faults"):
         # img = img.resize(image_shape)
         result = model.predict(img, conf = 0.5, show_conf = False )
         plot_img = result[0].plot()
         result_img = Image.fromarray(plot_img)
+    
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.header("Original Image")
+        st.image(img)
+
+    with col2:
+        st.header("Detected Fault Image")
         st.image(result_img)
 else:
     st.write("Upload an Image first")

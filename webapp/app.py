@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from PIL import Image
 
 model_path = "/home/gourav/ML/PCB Fault Detection/webapp/model/best.pt"
-st.set_page_config(page_title="PCB Fault Detection ", page_icon=":shark:", layout="wide",)
+st.set_page_config(page_title="PCB Fault Detection ", layout="wide",)
 
 #title
 st.title("PCB Fault Detection")

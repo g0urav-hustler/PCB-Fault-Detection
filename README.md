@@ -283,18 +283,36 @@ Reference - https://docs.ultralytics.com/models/yolov8/#key-features
 
 ![F1-Curve Image](https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/F1_curve.png)
 
-  
-
 **Reference** - https://docs.ultralytics.com/modes/val/
 
+
+  ### Results
+
+Result pair 1:
+<div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test1.jpg" width="375" style="margin:20">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test1_result.jpg" width="375" style="margin:20"> 
+ </div>
+Result pair 2:
+<div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test2.jpg width="375" style="margin:20">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test2_result.jpg" width="375" style="margin:20"> 
+ </div>
+ Result pair 3:
+<div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test3.jpg" width="375" style="margin:20">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test3_result.jpg width="375" style="margin:20"> 
+ </div>
   
 
 ## 6. WebApp
 
 **[Code](https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/webapp/app.py)**
 
-  
+The webpage is build using Streamlit library . See [Reference](https://streamlit.io/)
 
 **WEBAPP**
 
+
 ![Web Image](https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/web_image.png)
+

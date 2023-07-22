@@ -90,5 +90,8 @@ The desired folder structure which is an entire repository of all the training i
       └─val_data
 ```
 
-## Base model 
+## 3. Base model 
 For the base model we YOLO V8 Large model.
+Reference - 
+Notebook - []
+

@@ -294,14 +294,14 @@ Result pair 1:
 <img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test1_result.jpg" width="375" style="margin:20"> 
  </div>
 Result pair 2:
-<div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test2.jpg width="375" style="margin:20">
+<div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test2.jpg" width="375" style="margin:20">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test2_result.jpg" width="375" style="margin:20"> 
  </div>
  Result pair 3:
 <div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test3.jpg" width="375" style="margin:20">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test3_result.jpg width="375" style="margin:20"> 
+<img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test3_result.jpg" width="375" style="margin:20"> 
  </div>
   
 

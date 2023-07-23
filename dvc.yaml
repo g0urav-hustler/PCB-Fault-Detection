@@ -1,0 +1,59 @@
+stages:
+  data_ingestion:
+    cmd: python src/YOLO_V8/pipeline/stage_01_data_ingestion.py
+    deps:
+      - src/YOLO_V8/pipeline/stage_01_data_ingestion.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion
+
+  data_processing:
+    cmd: python src/YOLO_V8/pipeline/stage_02_data_processing.py
+    deps:
+      - src/YOLO_V8/pipeline/stage_02_data_processing.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_processing
+
+
+  prepare_base_model:
+    cmd: python src/YOLO_V8/pipeline/stage_03_prepare_base_model.py
+    deps:
+      - rc/YOLO_V8/pipeline/stage_03_prepare_base_model.py
+      - config/config.yaml
+    params:
+      - BASE_MODEL
+      - MODEL_NAME
+    outs:
+      - artifacts/base_models
+
+
+
+  model_training:
+    cmd: python src/YOLO_V8/pipeline/stage_04_train_model.py
+    deps:
+      - src/YOLO_V8/pipeline/stage_04_train_model.py
+      - config/config.yaml
+      - artifacts/data_processing/split_data
+      - artifacts/base_models
+    params:
+      - EPOCHS
+      - BATCH_SIZE
+      - IMAGE_SIZE
+      - OPTIMIZER
+    outs:
+      - artifacts/train_models
+
+
+  model_evaluation:
+    cmd: python src/YOLO_V8/pipeline/stage_05_model_evaluation.py
+    deps:
+      - src/YOLO_V8/pipeline/stage_05_model_evaluation.py
+      - config/config.yaml
+      - artifacts/data_processing/split_data
+      - artifacts/train_models
+    params:
+      - BATCH_SIZE
+      - IMAGE_SIZE
+      - CONFIDENCE
+    

@@ -241,7 +241,7 @@ The desired folder structure which is an entire repository of all the training i
 
 ## 3. Base model
 
-  
+[Notebook](https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/research/prepare_base_model.ipynb)  
 
 For the base model we YOLO V8 Large model.
 
@@ -251,7 +251,7 @@ Reference - https://docs.ultralytics.com/models/yolov8/#key-features
 
   
 
-[Notebook](https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/research/prepare_base_model.ipynb)
+
 
   
 

@@ -59,7 +59,7 @@ Phases of the Project:
 
   
 
-7. Deploying
+7. Deployment
 
   
 

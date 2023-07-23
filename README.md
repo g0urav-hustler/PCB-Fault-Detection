@@ -288,6 +288,8 @@ Reference - https://docs.ultralytics.com/models/yolov8/#key-features
 
   ### Results
 
+Here we show some results of our YOLO V8 Model. Our model achieves **_73.3% mAp, 92.0% F-score by traning model for 10 Epochs**.
+
 Result pair 1:
 <div align=center><img src="https://github.com/g0urav-hustler/PCB-Fault-Detection/blob/main/readme_sources/test1.jpg" width="375" style="margin:20">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

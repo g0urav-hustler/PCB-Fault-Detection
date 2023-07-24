@@ -9,7 +9,7 @@ st.set_page_config(page_title="PCB Fault Detection ", layout="wide",)
 st.title("PCB Fault Detection")
 
 #subtitle
-st.markdown("This application helps you to detect the faults in pcb's. ")
+st.markdown("This application helps you to detect the faults in printed circuit boards. ")
 
 @st.cache_resource(show_spinner="Loading the app..")
 def load_model(model_name):
@@ -45,7 +45,7 @@ if image is not None:
             st.image(result_img)
     else:
         st.image(img)
-        st.subheader("The PCB has no fault in it.")
+        st.subheader("The PCB has no fault.")
 else:
     st.write("Upload an Image first")
 
